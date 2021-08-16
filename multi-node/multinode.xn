@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network xmlns="http://www.xmos.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.xmos.com http://www.xmos.com">
+
+
+// Declare 2 XCore tiles (I probably want sevaral more) They are likely distributed over multiple cores
+<Declarations>
+  <Declaration>tileref tile[2]</Declaration>
+</Declarations>
+
+<Packages>
+  <Package Id="P1" Type="XS1-LnA-64-TQ128">
+    <Nodes>
+      <Node Id="Master" Type="XS1-L8A-64" InPackageId="0"
+            Oscillator="20MHz" SystemFrequency="400MHz">
+      <Boot>
+        <Source Location="SPI:bootFlash"/>
+        <Bootee NodeId="Slave" Tile="0"/>
+      </Boot>
+      <Tile Number="0" Reference="tile[0]">
+        <Port Location="XS1_PORT_1A" Name="PORT_SPI_MISO"/>
+        <Port Location="XS1_PORT_1B" Name="PORT_SPI_SS"/>
+        <Port Location="XS1_PORT_1C" Name="PORT_SPI_CLK"/>
+        <Port Location="XS1_PORT_1D" Name="PORT_SPI_MOSI"/>
+        <Port Location="XS1_PORT_4A" Name="PORT_LED"/>
+      </Tile>
+    </Node>
+  </Nodes>
+</Package>

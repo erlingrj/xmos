@@ -1,0 +1,30 @@
+[submodule "lib/lib_tsn"]
+	path = lib/lib_tsn
+	url = https://github.com/xmos/lib_tsn
+[submodule "lib/lib_xassert"]
+	path = lib/lib_xassert
+	url = https://github.com/xmos/lib_xassert
+[submodule "lib/lib_ethernet"]
+	path = lib/lib_ethernet
+	url = https://github.com/xmos/lib_ethernet
+[submodule "lib/lib_gpio"]
+	path = lib/lib_gpio
+	url = https://github.com/xmos/lib_gpio
+[submodule "lib/lib_i2c"]
+	path = lib/lib_i2c
+	url = https://github.com/xmos/lib_i2c
+[submodule "lib/lib_locks"]
+	path = lib/lib_locks
+	url = https://github.com/xmos/lib_locks
+[submodule "lib/lib_logging"]
+	path = lib/lib_logging
+	url = https://github.com/xmos/lib_logging
+[submodule "lib/lib_otpinfo"]
+	path = lib/lib_otpinfo
+	url = https://github.com/xmos/lib_otpinfo
+[submodule "lib/lib_random"]
+	path = lib/lib_random
+	url = https://github.com/xmos/lib_random
+[submodule "lib/lib_slicekit_support"]
+	path = lib/lib_slicekit_support
+	url = https://github.com/xmos/lib_slicekit_support

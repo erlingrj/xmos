@@ -3,3 +3,9 @@
 *.gtk
 *.xe
 *.swp
+
+*/bin/*
+*/.build/*
+*.xi
+*.vscode/
+*.zipinfo/
